@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true" class="has-header">
+  <form id="page-form1" class="list">
+    <label class="item item-input" id="page-input1">
+      <input type="text" placeholder="0" [value]="result">
+    </label>
+  </form>
+  <div id="page-container1">
+    <button id="page-button3" class="button button-assertive" (click)="btnClicked('C')">C</button>
+    <button id="page-button4" class="button button-energized" (click)="btnClicked('%')">%</button>
+    <button id="page-button5" class="button button-energized" (click)="btnClicked('*')">*</button>
+  </div>
+  <div id="page-container2">
+    <button id="page-button7" class="button button-positive" (click)="btnClicked('7')">7</button>
+    <button id="page-button8" class="button button-positive" (click)="btnClicked('8')">8</button>
+    <button id="page-button9" class="button button-positive" (click)="btnClicked('9')">9</button>
+    <button id="page-button10" class="button button-energized" (click)="btnClicked('+')">+</button>
+  </div>
+  <div id="page-container3">
+    <button id="page-button11" class="button button-positive" (click)="btnClicked('4')">4</button>
+    <button id="page-button12" class="button button-positive" (click)="btnClicked('5')">5</button>
+    <button id="page-button13" class="button button-positive" (click)="btnClicked('6')">6</button>
+    <button id="page-button14" class="button button-energized" (click)="btnClicked('-')">-</button>
+  </div>
+  <div id="page-container4">
+    <button id="page-button15" class="button button-positive" (click)="btnClicked('1')">1</button>
+    <button id="page-button16" class="button button-positive" (click)="btnClicked('2')">2</button>
+    <button id="page-button17" class="button button-positive" (click)="btnClicked('3')">3</button>
+    <button id="page-button18" class="button button-energized" (click)="btnClicked('/')">/</button>
+  </div>
+  <div id="page-container5">
+    <button id="page-button20" class="button button-positive" (click)="btnClicked('0')">0</button>
+    <button id="page-button6" class="button button-energized"  (click)="btnClicked('=')">=</button>
+  </div>
+</ion-content>

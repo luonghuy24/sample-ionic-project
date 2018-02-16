@@ -1,3 +1,25 @@
 page-home {
-
+    .card {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        background: #D4DD48;
+        overflow: auto;
+        .information {
+            float: left;
+            width: 65%;            
+            vertical-align: top;
+            h3 {
+                margin-top: 0;
+            }
+        }
+        .avatar {            
+            float: right;
+            width: 30%;
+            border: 1px solid black;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

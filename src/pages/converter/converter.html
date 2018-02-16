@@ -1,0 +1,37 @@
+<!--
+  Generated template for the ConverterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Temperature Converter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item no-padding>
+      <ion-label>From</ion-label>
+      <ion-select #F (ionChange)="changeFromUnit(F.value)" interface="popover">
+        <ion-option value="Celsius" selected>Celsius</ion-option>
+        <ion-option value="Fahrenheit">Fahrenheit</ion-option>
+        <ion-option value="Kelvin" >Kelvin</ion-option>        
+      </ion-select>
+    </ion-item>
+    <ion-item no-padding>
+      <ion-label>To</ion-label>
+      <ion-select #T interface="popover" (ionChange)="changeToUnit(T.value)">
+        <ion-option value="Celsius">Celsius</ion-option>
+        <ion-option value="Fahrenheit" selected>Fahrenheit</ion-option>
+        <ion-option value="Kelvin" >Kelvin</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <form >    
+    <input type="text" [(ngModel)]="inputUnit" name="input"  placeholder="0" [value]=input (change)=changeInput(inputUnit) >    
+    <input type="text" disabled margin-top [value]=output>
+  </form>  
+</ion-content>
