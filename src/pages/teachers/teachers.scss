@@ -1,0 +1,24 @@
+page-teachers {
+  .card {
+    padding: 15px;
+    background: #454545;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    .teacher-name {
+      font-family: "OpenSans";
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+    }
+    p {
+        font-family: "OpenSans";
+        font-weight: 400;
+        color: white;
+        font-size: 16px;
+        span {
+            color: #d4df38;
+            margin-right: 5px;
+        }
+    }
+  }
+}

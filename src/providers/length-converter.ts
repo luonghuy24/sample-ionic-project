@@ -11,7 +11,7 @@ export class LengthConverterProvider {
 
   output = 0;
 
-  cal(input, fromUnit, toUnit){        
+  cal(input, fromUnit, toUnit){
     switch(fromUnit) {
       case "Celsius":
         switch(toUnit){
@@ -23,33 +23,33 @@ export class LengthConverterProvider {
             break;
           default:
             this.output = input;
-        }        
+        }
         break;
       case "Fahrenheit":
         switch(toUnit){
           case "Celsius":
             this.output = (input-32)/1.8
-            break;    
+            break;
           case "Kelvin":
             this.output = ((input-32)/1.8)+273.15
-            break;    
+            break;
           default:
             this.output = input;
-        }        
+        }
         break;
       case "Kelvin":
         switch(toUnit){
           case "Celsius":
             this.output = parseFloat(input.toString()) -273.15
-            break;    
+            break;
           case "Fahrenheit":
             this.output = ((input-273.15)*1.8)+32
-            break;    
+            break;
           default:
             this.output = input;
-        }        
+        }
         break;
     }
-    return this.output;
+    return this.output.toFixed(2);
   }
 }

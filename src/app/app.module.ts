@@ -7,15 +7,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { ConverterPage } from '../pages/converter/converter';
+// import { ConverterPage } from '../pages/converter/converter';
+// import { AboutPage } from '../pages/about/about';
+import { ProgramOutlinePage } from '../pages/program-outline/program-outline';
 import { LengthConverterProvider } from '../providers//length-converter';
-
+import { TeachersPage } from '../pages/teachers/teachers';
+import { CommentsPage } from '../pages/comments/comments';
+import { CourseDetailPage } from '../pages/course-detail/course-detail';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ConverterPage,    
+    ProgramOutlinePage,
+    TeachersPage,
+    CommentsPage,
+    CourseDetailPage,
     TabsPage
   ],
   imports: [
@@ -26,14 +33,17 @@ import { LengthConverterProvider } from '../providers//length-converter';
   entryComponents: [
     MyApp,
     HomePage,
-    ConverterPage,
+    ProgramOutlinePage,
+    TeachersPage,
+    CommentsPage,
+    CourseDetailPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LengthConverterProvider    
+    LengthConverterProvider
   ]
 })
 export class AppModule {}

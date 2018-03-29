@@ -10,26 +10,16 @@ import { LengthConverterProvider } from '../../providers//length-converter';
 })
 
 export class ConverterPage {
-  input = 0;
-  output = 0;
+  input = 100;
+  output = "";
   fromUnit = "Celsius";
-  toUnit = "Fahrenheit"
+  toUnit = "Fahrenheit";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public lengthConverterService: LengthConverterProvider) {
+    this.convert();
   }
 
-  changeFromUnit(value){
-    this.fromUnit = value;    
-    this.output = this.lengthConverterService.cal(this.input, this.fromUnit, this.toUnit);
-  }
-
-  changeToUnit(value){
-    this.toUnit = value;    
-    this.output = this.lengthConverterService.cal(this.input, this.fromUnit, this.toUnit);
-  }
-
-  changeInput(value){
-    this.input = value;
+  convert(){
     this.output = this.lengthConverterService.cal(this.input, this.fromUnit, this.toUnit);
   }
 }

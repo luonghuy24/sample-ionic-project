@@ -1,0 +1,45 @@
+page-program-outline {
+  .card {
+    margin-bottom: 40px;
+    .card-title {
+      padding: 20px;
+      background: #d4df38;
+      color: black;
+      font-size: 18px;
+      font-family: "OpenSans";
+      font-weight: 600;
+    }
+    .card-body {
+      border: 1px solid #d4df38;
+      padding: 25px 15px;
+      table {
+        width: 100%;
+        thead{
+          tr {
+            th {
+              background: #454545;
+              color: white;
+              font-family: "OpenSans";
+              font-weight: 600;
+              font-size: 16px;
+              text-align: left;
+              padding: 15px;
+            }
+          }
+        }
+        tbody{
+          tr {
+            td {
+              padding: 15px;
+              font-size: 16px;
+              font-weight: 400;
+            }
+            &:nth-child(odd){
+              background: #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
